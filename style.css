@@ -1,0 +1,181 @@
+
+/* Font properties and background color for all elements inside the <body> and <html> tags */
+body,
+html {
+  height: 100%;
+  font-size: 20px; /* Change the font size*/
+  font-family: 'Playfair Display', serif; /* Change the font */
+  line-height: 1.5em; /* Change the line height size*/
+  margin: 0em;
+  color: #222725; /* Change the font color*/
+  background-color: #121113; /* Change the background color */
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight:bold;
+  color: brown;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+/* the font-family property to linked font*/
+h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight:bold;
+  color: brown;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+h3 {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight:bold;
+  color: brown;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+p { 
+color: black;}
+/*TODO: the color of a link when a person hovers over it*/
+p a {
+  color: #222725;
+  text-decoration: underline;
+}
+
+ul.nav-bar {
+  /* Styling for the <ul class="nav-bar"> element */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F7F7F2;
+  border-style: solid;
+  border-color: #222725;
+}
+
+
+li.nav {
+  font-family: 'Chewy', cursive;
+  float: right;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #899878;
+}
+
+li.nav a {
+  display: block;
+  color: #222725;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li.nav a:hover {
+  /* Styling for the <a> elements when the mouse is hovering in <li class="nav"> */
+  background-color: brown;
+  color: #E4E6C3;
+}
+
+.flex-container {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: nowrap;
+  justify-content: center; 
+  align-items: center; 
+
+  /* Design properties */
+  background-color: #899878;
+  padding: 5px;
+
+  /* Positioning properties */
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 40%; 
+  
+}
+
+.heading-home {
+  padding: 2%;
+  color: #E4E6C3;
+  font-size: 50px;
+  letter-spacing: 5px;
+  line-height: 60px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  border-style: solid;
+  border-color: #121113;
+}
+
+.intro-text {
+  background-color: #121113; 
+  padding: 4%;
+  margin: 3%;
+  color: #F7F7F2; 
+  font-size: 20px; 
+  letter-spacing: 2px; 
+  line-height: 1.4em; 
+  text-align: center;
+
+}
+
+
+.text-section {
+  background-color: #E4E6C3;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+}
+
+.main-message,
+.image-one,
+.image-two {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #43d6b9ff;
+  background-size: cover;
+  min-height: 100%;
+  
+  background-attachment: fixed;
+}
+
+
+.main-message {
+  background-image: url("https://cdn.glitch.com/0e715c48-8588-4c9b-83de-7303779182b0%2Fshutterstock_1123885724.jpg?v=1595975235081");
+}
+
+
+.image-one {
+  background-image: url("https://cdn.glitch.com/0e715c48-8588-4c9b-83de-7303779182b0%2FTHUMBNAIL__2%20Forced%20treatment%20among%20the%20mentally%20ill.jpg?v=1595976783911");
+}
+
+.image-two {
+  background-image: url("https://cdn.glitch.com/0e715c48-8588-4c9b-83de-7303779182b0%2Fwoman-1958723_1280.jpg?v=1596070840686");
+}
+
+.attributions {
+  font-size: 12px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .flex-container {
+    flex-wrap: wrap;
+    top: 20%;
+  }
+}
+
